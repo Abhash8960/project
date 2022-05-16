@@ -1,0 +1,67 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+.signup__header {
+  padding: 25px;
+}
+
+.signup__formcontrol {
+  margin-bottom: 20px;
+  position: relative;
+}
+.signup__formcontrol label {
+  margin-bottom: 5px;
+}
+.signup__formcontrol input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+.signup__formcontrol input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.signup__formcontrol.success input {
+  border-color: #2ecc71;
+}
+.signup__formcontrol.error input {
+  border-color: #e74c3c;
+}
+.signup__formcontrol i {
+  position: absolute;
+  right: 8px;
+  top: 28px;
+  visibility: hidden;
+}
+
+.signup__formcontrol.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.signup__formcontrol.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.signup__formcontrol small {
+  color: #e74c3c;
+  font-size: 10px;
+  left: 0;
+  visibility: hidden;
+}
+.signup__formcontrol.error small {
+  visibility: visible;
+}
+.signup__btn {
+  background: #007bff;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+}
